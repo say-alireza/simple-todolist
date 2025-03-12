@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class=" row  justify-content-center mt-5">
+            <div class="col-10 col-md-6">
+                <div class="d-flex align-items-center">
+                    <i style="font-size: 2rem;" class="bi bi-calendar-check-fill d-block"></i>
+                    <p class="text-secondary ms-2 mb-0 fs-3 ">
+                        ToDoList
+                    </p>
+                </div>
+                <form id="item-form">
+                    <div class="mb-3">
+
+                        <label for="item-input" class="form-label">Enter Item</label>
+                        <input type="text" id="item-input" class="form-control">
+                        <div id="input-invalid" class="form-text text-danger"></div>
+                    </div>
+                    <button type="submit" id="btn" class="btn btn-sm btn-dark">
+                        <i class="bi bi-plus"></i>
+                        Add Item
+                    </button>
+                </form>
+                <div class="mt-3">
+                    <input type="text" class="form-control form-control-sm" id="input-filter" placeholder="FilterItems">
+                </div>
+                <ul id="list-item" class="my-4 p-0">
+                    <!-- <li class="list-item">
+                        An item
+                        <i class="bi bi-x fs-5 text-danger"></i>
+                    </li>
+                    <li class="list-item">
+                        A second item
+                        <i class="bi bi-x fs-5 text-danger"></i>
+                    </li>
+                    <li class="list-item">
+                        A third item
+                        <i class="bi bi-x fs-5 text-danger"></i>
+                    </li>
+                    <li class="list-item">
+                        An fourth item
+                        <i class="bi bi-x fs-5 text-danger"></i>
+                    </li>
+                    <li class="list-item">
+                        An fifth item
+                        <i class="bi bi-x fs-5 text-danger"></i>
+                    </li> -->
+                </ul>
+                <div class="d-grid">
+                    <button id="items-clear" class="btn btn-outline-dark" type="button">
+                        Clear All
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
